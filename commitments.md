@@ -22,3 +22,4 @@ En person i gruppen måste godkänna/testa committen innan den kan merga till ma
 
 ## Underskrivet av
 @anvan
+@YeseniaCM
