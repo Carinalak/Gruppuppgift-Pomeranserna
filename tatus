@@ -1,0 +1,56 @@
+[33mcommit a8e9258d6d45241ed2004a5f7a026e30f9522f42[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 6eb839b 16ebb31
+Author: Carinalak <carina.lakosil@gmail.com>
+Date:   Mon Dec 18 07:38:18 2023 +0100
+
+    Merge branch 'main' of https://github.com/Medieinstitutet/fed23d-javascript-grundkurs-gruppuppgift-pomeranserna
+
+[33mcommit 6eb839bd4aec8d64aae5e7716b38de74d3789784[m
+Author: Carinalak <carina.lakosil@gmail.com>
+Date:   Mon Dec 18 07:38:10 2023 +0100
+
+    Change the reponame to pomeranserna
+
+[33mcommit 16ebb31812f2416b8d948e4c24cb122d73984eaa[m
+Author: YeseniaCM <yeseniacamilla@hotmail.com>
+Date:   Sun Dec 17 17:03:33 2023 +0100
+
+    Sign - Yesenia
+
+[33mcommit 02f87a8f31b57d4c18f5aa0cbdb6cc901bb357e7[m
+Author: Michael Inma <112844696+Divorso@users.noreply.github.com>
+Date:   Fri Dec 15 20:00:33 2023 +0700
+
+    Create commitments.md
+    
+    Början av gruppkontraktet
+
+[33mcommit d5a1232e70697ca7f33e1b492aa5c226cb5605e4[m
+Author: Jenni <jenni@ohsomodern.org>
+Date:   Wed Dec 13 16:50:13 2023 +0200
+
+    Update README.md
+
+[33mcommit e141d62d59fa4278c032abf4ee066f637c3a7503[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Dec 13 12:41:48 2023 +0000
+
+    add deadline
+
+[33mcommit ee1c8d0a82cd22ba70e5840d625694a5cac9b01a[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Dec 13 12:41:45 2023 +0000
+
+    Setting up GitHub Classroom Feedback
+
+[33mcommit 067fe90ee27935df2092a333af5eeb340a29fa01[m[33m ([m[1;31morigin/feedback[m[33m)[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Dec 13 12:41:45 2023 +0000
+
+    GitHub Classroom Feedback
+
+[33mcommit 567c4e57bb2a4156ff9c85bc8bcec731069323a2[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Dec 13 12:41:43 2023 +0000
+
+    Initial commit
