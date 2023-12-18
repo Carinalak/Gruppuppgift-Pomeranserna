@@ -11,7 +11,7 @@
 - linting- och prettier-konfiguration = använder  "" -> ''
 - hur ni skriver commit-meddelanden = Engelska, nutid, förklaring av vad som ändras/läggs till
 - hur ofta ni gör commits = Vid feedback eller när man är klar med sin del.
-En person i gruppen måste godkänna/testa committen innan den kan merga till main.
+- En person i gruppen måste godkänna/testa committen innan den kan merga till main.
 
 
 
@@ -21,5 +21,5 @@ En person i gruppen måste godkänna/testa committen innan den kan merga till ma
 
 
 ## Underskrivet av
-@anvan
+@Divorso - Michael
 @YeseniaCM
