@@ -1,9 +1,9 @@
 # Gruppkontrakt
 - Vi kommer köra på Discord.
 - Kamera på/av, upp till en själv.
-- Vi bestämmer möten själva, 1-2st i veckan. 
+- Vi kör daily möte 16:00 - Början av veckan pratar vi om vad man har vid sitt bord, sen slutet av veckan pratar vi om vad man inte hann med.
 - Kommunikation via chat, meddelar via Discord vid sjukdom/förhinder.
-- Arbetsmetoder väljer vi under agila kursen.
+- Arbetsmetod - Scrum
 - Arbetstider, valfritt
 - Satsar på VG
 - Koden kommer vara skriven på engelska
@@ -12,13 +12,8 @@
 - hur ni skriver commit-meddelanden = Engelska, nutid, förklaring av vad som ändras/läggs till
 - hur ofta ni gör commits = Vid feedback eller när man är klar med sin del.
 - En person i gruppen måste godkänna/testa committen innan den kan merga till main.
-
-
-
-//////
-- hur er tidsplan ser ut, vad ni har för milstolpar och hur ni hanterar om ni märker att ni hamnar efter/före i planeringen
-- hur ni hanterar att göra-listan/backlogen
-
+- Hanterar backlogen i Github
+- Vi kör veckosprint istället för 2v 
 
 ## Underskrivet av
 @Divorso - Michael
