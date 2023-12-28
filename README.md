@@ -59,3 +59,12 @@ Klicka i vilka krav ni har gjort:
 - Välj ett av nedan:
   - [ ] Man ska kunna välja att spela mellan lätta, medelsvåra och svåra frågor. Planera hur detta påverkar highscoren.
   - [ ] Det ska vara som en julkalender: bakom varje lucka (24 st) så visas det X antal nya frågor per dag.
+
+Wireframe för mobilversion ser ut såhär:  
+  ![Wireframe för mobil version](src/assets/images/Wireframe-mobile2.png)  
+Wireframe för tablet och desktopversion ser ut såhär:  
+  ![Wireframe för mobil version](src/assets/images/Wireframe-desktop2.png)  
+Flowchart för sidan:  
+  ![Wireframe för mobil version](src/assets/images/flowchart.png)
+
+
