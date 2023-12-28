@@ -1,19 +1,4 @@
-:root {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "mobile";
+@import "tablet";
 
-.app {
-  max-width: 320px;
-  margin: 0 auto;
-  text-align: center;
-}
-body {
-  background-color: lightgrey;
-}
-h1 {
-  text-align: center;
-}
+
