@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-image: url('../assets/images/movie-top.jpg');
     background-size: cover;
     width: 100%;
@@ -34,6 +35,8 @@
     padding-right: 30px;
     color: #ffffff;
     background: transparent;
+    position: absolute;
+    left: 10px;
 }
 .hamburgermenu .hamburgerline  {
     display: block;
@@ -44,15 +47,15 @@
     margin-bottom: 4px;
 }
 /* Hamburgermenu ends */
-
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+}
 body {
    background-color: lightgrey;
 }
-  h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 3rem;
-}
+
 main {
     display: flex;
     flex-direction: row;
