@@ -1,3 +1,7 @@
+# Projektbeskrivning:
+Vi har fått i uppdrag att skapa en quiz, med hjälp av de kunskaper vi har fått hittills i våra kurser på Medieinstitutet - HTML, CSS, SCSS, samt Javascript som vi lär oss just nu. Vår grupp bestämde oss för en Quiz i underhållning. Vi som arbetar med projektet är: Michael Inma, Carina Lakosil, Yesenia Martinez, Nell Andersson, och Alexander Forselius. Vi har fyra veckor på oss att slutföra arbetet, dec 2023 - jan 2024.
+
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ZejtqupA)
 # Projektmall FED23D
 Läs instruktionerna på kurswebben för att komma igång.
