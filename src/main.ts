@@ -9,27 +9,55 @@ import { sortArrayByText } from './helpers'; // Exempel på hur ni importerar en
  * Prova t.ex. att lägga till en egenskap i interfacet, och notera hur arrayen nedanför
  * får rödmarkeringar där denna egenskap saknas.
  */
-interface IExampleArray {
-  name: string;
-  age: number;
+interface QuizQuestion {
+  question: string;
+  answerOption1: string;
+  answerOption2: string;
+  answerOptionX: string;
+  correctAnswer: string;
 }
+
 
 // Här skriver vi att vår array med namnet myExampleArray ska följa reglerna (interfacet)
 // i IExampleArray och att det är en array genom att vi sätter [] efter
-const myExampleArray: IExampleArray[] = [
+let newQuizBox: QuizQuestion[] = [
   {
-    name: 'Hans',
-    age: 25,
+    question: 'Vem regisserade Jurassic Park',
+    answerOption1: 'Martin Scorsese',
+    answerOptionX: 'Steven Speilberg',
+    answerOption2: 'Ridley Scott',
+    correctAnswer: 'Steven Speilberg',
   },
   {
-    name: 'Greta',
-    age: 30,
+    question: 'Vilken film är den högst rankade på IMDB',
+    answerOption1: 'The Godfather',
+    answerOptionX: 'Schindlers List',
+    answerOption2: 'The Shawshank Redemption',
+    correctAnswer: 'The Shawshank Redemption',
   },
   {
-    name: 'Häxan',
-    age: 87,
+    question: 'Vart filmades Lord of the Rings trilogin',
+    answerOption1: 'Ireland',
+    answerOptionX: 'New Zealand',
+    answerOption2: 'Australia',
+    correctAnswer: 'New Zealand',
+  },
+  {
+    question: 'Vilken skådespelare spelar "Private Ryan" i filmen "Saving Private Ryan"',
+    answerOption1: 'Matt Damon',
+    answerOptionX: 'Tom Hanks',
+    answerOption2: 'Vin Diesel',
+    correctAnswer: 'Matt Damon',
+  },
+  {
+    question: 'Vilken är den mest inkomstbringande filmen genom tiderna',
+    answerOption1: 'Titanic',
+    answerOptionX: 'Avatar',
+    answerOption2: 'Avatar: The way of water',
+    correctAnswer: 'Avatar: The way of water',
   },
 ];
+let oldQuizBox: QuizQuestion[] = [];
 
 // Skriv ut den sorterade arrayen i konsolen, använd en importerad funktion
 console.table(sortArrayByText(myExampleArray, 'name'));
