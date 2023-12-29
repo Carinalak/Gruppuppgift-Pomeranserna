@@ -56,6 +56,41 @@ let newQuizBox: QuizQuestion[] = [
     answerOption2: 'Avatar: The way of water',
     correctAnswer: 'Avatar: The way of water',
   },
+  {
+    question: 'Vilken stad kommer Beatles från?',
+    answerOption1: 'Liverpool',
+    answerOptionX: 'London',
+    answerOption2: 'Sheffield',
+    correctAnswer: 'Liverpool',
+  },
+  {
+    question: 'Vem vann Eurovision Song Contest år 2012?',
+    answerOption1: 'Måns Zelmerlöv',
+    answerOptionX: 'Loreen',
+    answerOption2: 'Charlotte Perrelli',
+    correctAnswer: 'Loreen',
+  },
+  {
+    question: 'I filmen ”Tillbaka till framtiden” stannade den stora klockan. Varför?',
+    answerOption1: 'Det blev strömavbrott.',
+    answerOptionX: 'Någon kastade en sten på den.',
+    answerOption2: 'Blixten slog ner i den.',
+    correctAnswer: 'Blixten slog ner i den.',
+  },
+  {
+    question: 'Vad var David Bowies riktiga namn?',
+    answerOption1: 'David Smith',
+    answerOptionX: 'David Jones',
+    answerOption2: 'David Fowles',
+    correctAnswer: 'David Jones',
+  },
+  {
+    question: 'Vad hette rockgruppen Europe när de bildades 1978, innan de bytte namn?',
+    answerOption1: 'Force',
+    answerOptionX: 'Enigma',
+    answerOption2: 'Dragons Lair',
+    correctAnswer: 'Force',
+  },
 ];
 let oldQuizBox: QuizQuestion[] = [];
 
