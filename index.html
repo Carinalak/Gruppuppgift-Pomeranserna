@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
-    <link rel="stylesheet" href="/src/scss/style.css" type="text/css">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+    />
+    <link rel="stylesheet" href="/src/scss/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz i Underhållning</title>
   </head>
@@ -22,38 +25,32 @@
       <section class="left-side"></section>
 
       <section class="main-page">
-    <!-- --------------------------- Nedan ska huvudinnehållet för sidan ligga: -------------------------------------- -->
+        <!-- --------------------------- Nedan ska huvudinnehållet för sidan ligga: -------------------------------------- -->
         <article class="quizbox-container">
           <div class="quizbox">
-
             <h2 id="questionNumber" class="question-number">Question number 1</h2>
-            <div id="score" class="score">4 poäng</div>           <!-- Här lägger vi in poängräknare -->
-            <div id="timeCount" class="time-count">01:20</div>    <!-- Här lägger vi in tidsräknare -->
-            <div></div>     <!-- Här lägger vi in den slumpade frågan -->
-
+            <div id="score" class="score">4 poäng</div>
+            <!-- Här lägger vi in poängräknare -->
+            <div id="timeCount" class="time-count">01:20</div>
+            <!-- Här lägger vi in tidsräknare -->
+            <div>
+              <div id="question">Question will go here</div>
+              <button id="answer1">Answer 1</button>
+              <button id="answer2">Answer 2</button>
+              <button id="answer3">Answer 3</button>
+            </div>
+            <!-- Här lägger vi in den slumpade frågan -->
           </div>
-
-
-
-
-
-
-
-
-
-
-
         </article>
-    <!-- --------------------------------------- Huvudinnehåll slutar här ------------------------------------------- -->
+        <!-- --------------------------------------- Huvudinnehåll slutar här ------------------------------------------- -->
       </section>
       <section class="right-side"></section>
-
-
     </main>
     <footer>
-    <div class="footer-text">  &copy; Pomeranserna Quizgame 2023 </div>
+      <div class="footer-text">&copy; Pomeranserna Quizgame 2023</div>
     </footer>
     <div class="app" id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <!-- <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>
