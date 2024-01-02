@@ -2,6 +2,7 @@ import { QuizQuestion, newQuizBox } from "./main";
 
 let displayedQuestions: number[] = [];
 let currentQuestionIndex: number | undefined;
+let answeredQuestionsCount = 0;
 
 const getRandomQuestionIndex = (): number => {
 	const indices = [...newQuizBox.keys()];
@@ -44,12 +45,13 @@ const checkAnswer = (selectedButtonIndex: number) => {
 	const selectedAnswer = button.innerText;
 	const correct = question.correctAnswer === selectedAnswer;
 	button.classList.add(correct ? "correct" : "wrong");
+	answeredQuestionsCount++;
 
 	setTimeout(() => {
-		if (displayedQuestions.length < newQuizBox.length) {
+		if (answeredQuestionsCount < 10 && displayedQuestions.length < newQuizBox.length) {
 			displayQuestion();
 		} else {
-			alert("Quiz completed");
+			alert(answeredQuestionsCount === 10 ? "Du har svarat på 10 frågor!" : "Quizet är klart!");
 		}
 	}, 1000); // 1s
 };
