@@ -71,4 +71,11 @@ Wireframe för tablet och desktopversion ser ut såhär:
 Flowchart för sidan:  
   ![Wireframe för mobil version](src/assets/images/flowchart.png)
 
+# Produkt Backlog
+
+## Vecka 1
+![Wireframe för mobil version](src/assets/images/sprint1.png)  
+## Vecka 2
+![Wireframe för mobil version](src/assets/images/sprint2.png) 
+
 
