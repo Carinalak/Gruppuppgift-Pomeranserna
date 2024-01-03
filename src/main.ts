@@ -52,7 +52,7 @@ export let newQuizBox: QuizQuestion[] = [
     answerOption1: 'Titanic',
     answerOptionX: 'Avatar',
     answerOption2: 'Avatar: The way of water',
-    correctAnswer: 'Avatar: The way of water',
+    correctAnswer: 'Avatar',
   },
   {
     question: 'Vilken stad kommer Beatles från?',
