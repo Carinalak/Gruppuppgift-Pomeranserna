@@ -3,7 +3,8 @@ import { QuizQuestion, newQuizBox } from "./main";
 let displayedQuestions: number[] = [];
 let currentQuestionIndex: number | undefined;
 let answeredQuestionsCount = 0;
-let score = 0;                                // New code: --------- NELL - I put comments on everything that is new in your code. You can check if it works properly and then delete the comments. Tanx :-)
+let score = 0;                               
+const scoreElement = document.getElementById("score");
 
 const getRandomQuestionIndex = (): number => {
 	const indices = [...newQuizBox.keys()];
@@ -17,7 +18,6 @@ const displayQuestion = () => {
 	displayedQuestions.push(currentQuestionIndex);
 	const question = newQuizBox[currentQuestionIndex];
 	const questionElement = document.getElementById("question");
-	const scoreElement = document.getElementById("score");				// New code
 
 	if (questionElement) {
 		questionElement.innerText = question.question;
