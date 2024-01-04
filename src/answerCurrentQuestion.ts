@@ -65,7 +65,6 @@ const checkAnswer = (selectedButtonIndex: number) => {
 	const selectedAnswer = button.innerText;
 	const correct = question.correctAnswer === selectedAnswer;
 
-	// -------------------------- New code ---------------------------- //
 	if (correct) {
 		score++;
 	}
@@ -74,7 +73,6 @@ const checkAnswer = (selectedButtonIndex: number) => {
 	} else {
 		console.error("Score element not found");
 	}
-	// ---------------------- End New code --------------------------- //
 
 	button.classList.add(correct ? "correct" : "wrong");
 	answeredQuestionsCount++;
