@@ -93,14 +93,14 @@ const checkAnswer = (selectedButtonIndex: number) => {
 		retryButton.onclick = () => {};
 		resultsContainer.appendChild(retryButton);
 
-		questionResults.forEach((result, index) => {
-			const resultElement = document.createElement("div");
-			resultElement.className = result.answeredCorrectly ? "correct-answer" : "wrong-answer";
-			resultElement.innerHTML = `<strong>Fråga ${index + 1}:</strong> ${result.question} - ${
-				result.answeredCorrectly ? "Correct" : "Wrong"
-			}`;
-			resultsContainer.appendChild(resultElement);
-		});
+		// questionResults.forEach((result, index) => {
+		// 	const resultElement = document.createElement("div");
+		// 	resultElement.className = result.answeredCorrectly ? "correct-answer" : "wrong-answer";
+		// 	resultElement.innerHTML = `<strong>Fråga ${index + 1}:</strong> ${result.question} - ${
+		// 		result.answeredCorrectly ? "Correct" : "Wrong"
+		// 	}`;
+		// 	resultsContainer.appendChild(resultElement);
+		// });
 
 		const quizBoxContainer = document.querySelector(".quizbox-container") as HTMLElement;
 		quizBoxContainer.style.display = "none";
