@@ -1,10 +1,12 @@
 import { QuizQuestion, newQuizBox } from "./main";
 
+const NUMBER_OF_QUESTIONS_IN_QUIZ = 10;
+
 let displayedQuestions: number[] = [];
 let currentQuestionIndex: number | undefined;
 let questionResults: QuestionResult[] = [];
 let answeredQuestionsCount = 0;
-let score = 0;                               
+let score = 0;
 const scoreElement = document.getElementById("score");
 
 type QuestionResult = {
@@ -22,7 +24,8 @@ const getRandomQuestionIndex = (): number => {
 const updateProgressBar = (): void => {
 	const progressBar = document.getElementById("progressBar") as HTMLDivElement;
 	if (progressBar) {
-		const progressPercentage = ((displayedQuestions.length - 1) / newQuizBox.length) * 100;
+		const progressPercentage =
+			((displayedQuestions.length - 1) / NUMBER_OF_QUESTIONS_IN_QUIZ) * 100;
 		progressBar.style.width = `${progressPercentage}%`;
 	}
 };
@@ -38,7 +41,6 @@ const displayQuestion = () => {
 	} else {
 		console.error("Question element not found");
 	}
-
 
 	const answerKeys: (keyof QuizQuestion)[] = ["answerOption1", "answerOptionX", "answerOption2"];
 
@@ -63,16 +65,16 @@ const checkAnswer = (selectedButtonIndex: number) => {
 	const selectedAnswer = button.innerText;
 	const correct = question.correctAnswer === selectedAnswer;
 
-// -------------------------- New code ---------------------------- //
-	if (correct) {								
+	// -------------------------- New code ---------------------------- //
+	if (correct) {
 		score++;
-	  }				
+	}
 	if (scoreElement) {
 		scoreElement.innerText = `Poäng: ${score}`;
-	  } else {
+	} else {
 		console.error("Score element not found");
-	  }
-// ---------------------- End New code --------------------------- //
+	}
+	// ---------------------- End New code --------------------------- //
 
 	button.classList.add(correct ? "correct" : "wrong");
 	answeredQuestionsCount++;
@@ -123,7 +125,7 @@ const checkAnswer = (selectedButtonIndex: number) => {
 	};
 
 	setTimeout(() => {
-		if (displayedQuestions.length < newQuizBox.length) {
+		if (displayedQuestions.length < NUMBER_OF_QUESTIONS_IN_QUIZ) {
 			displayQuestion();
 		} else {
 			displayResults();
