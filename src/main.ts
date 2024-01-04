@@ -129,6 +129,3 @@ export let newQuizBox: QuizQuestion[] = [
 window.onload = () => {
   displayQuestion();
 };
-
-
-
