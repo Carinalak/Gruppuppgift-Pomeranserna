@@ -95,7 +95,38 @@ main {
 }
 .question-number {
 }
+.msg{
+	background-color: #5c1d1d60;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	height: max-content;
+    justify-content: center;
+	border-radius: 5px;
+}
+.quiz-start h1{
+	margin-bottom: 30px;
+}
 
+.quiz-start{
+	text-align: center;
+    background-color: #8d0a0ab4;
+    border-radius: 5px;
+	padding: 10px 10%;
+}
+.hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+  
+  .visible{
+	display: block;
+  }
 footer {
 	display: flex;
 	flex-direction: column;

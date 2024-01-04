@@ -1,6 +1,6 @@
 import displayQuestion from './answerCurrentQuestion';
 import './scss/style.scss'; // Importera huvud-SCSS-filen
-
+import { startQuiz } from './timeCount';
 /**
  * Här definierar vi en mall för hur vi vill att vår array ska se ut.
  * Ett så kallat "interface".
@@ -126,6 +126,15 @@ export let newQuizBox: QuizQuestion[] = [
   },
 ];
 
+
 window.onload = () => {
   displayQuestion();
+
+const startBtn: HTMLButtonElement | null = document.querySelector('#start-btn');
+  if (startBtn) {
+    startBtn.addEventListener('click', () => {
+        startQuiz();
+    });
+  }
+
 };
