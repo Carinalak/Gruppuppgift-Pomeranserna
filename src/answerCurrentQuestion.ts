@@ -4,6 +4,8 @@ let displayedQuestions: number[] = [];
 let currentQuestionIndex: number | undefined;
 let questionResults: QuestionResult[] = [];
 let answeredQuestionsCount = 0;
+let score = 0;                               
+const scoreElement = document.getElementById("score");
 
 type QuestionResult = {
 	question: string;
@@ -37,6 +39,7 @@ const displayQuestion = () => {
 		console.error("Question element not found");
 	}
 
+
 	const answerKeys: (keyof QuizQuestion)[] = ["answerOption1", "answerOptionX", "answerOption2"];
 
 	answerKeys.forEach((key, index) => {
@@ -59,6 +62,18 @@ const checkAnswer = (selectedButtonIndex: number) => {
 	const button = document.getElementById(`answer${selectedButtonIndex}`)!;
 	const selectedAnswer = button.innerText;
 	const correct = question.correctAnswer === selectedAnswer;
+
+// -------------------------- New code ---------------------------- //
+	if (correct) {								
+		score++;
+	  }				
+	if (scoreElement) {
+		scoreElement.innerText = `Poäng: ${score}`;
+	  } else {
+		console.error("Score element not found");
+	  }
+// ---------------------- End New code --------------------------- //
+
 	button.classList.add(correct ? "correct" : "wrong");
 	answeredQuestionsCount++;
 	questionResults.push({

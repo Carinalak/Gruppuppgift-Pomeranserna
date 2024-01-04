@@ -52,7 +52,7 @@ export let newQuizBox: QuizQuestion[] = [
     answerOption1: 'Titanic',
     answerOptionX: 'Avatar',
     answerOption2: 'Avatar: The way of water',
-    correctAnswer: 'Avatar: The way of water',
+    correctAnswer: 'Avatar',
   },
   {
     question: 'Vilken stad kommer Beatles från?',
@@ -89,8 +89,46 @@ export let newQuizBox: QuizQuestion[] = [
     answerOption2: 'Dragons Lair',
     correctAnswer: 'Force',
   },
+  {
+    question: 'Vilken skådespelare spelar Tony Stark, också känd som Iron Man, i Marvel Cinematic Universe?',
+    answerOption1: 'Robert Downey Jr.',
+    answerOptionX: 'Chris Evans',
+    answerOption2: 'Mark Ruffalo',
+    correctAnswer: 'Robert Downey Jr.',
+  },
+  {
+    question: 'I "World of Warcraft" finns det två grupper som spelarna kan välja att tillhöra. Vad heter dessa två grupper?',
+    answerOption1: 'Horde och Order',
+    answerOptionX: 'Horde och Alliance.',
+    answerOption2: 'Alliance och Faction',
+    correctAnswer: 'Horde och Alliance.',
+  },
+  {
+    question: 'Vad är namnet på den mest kända spelstaden för Alliance i "World of Warcraft"?',
+    answerOption1: 'Undercity',
+    answerOptionX: 'Stormwind',
+    answerOption2: 'Orgrimmar',
+    correctAnswer: 'Stormwind',
+  },
+  {
+    question: 'Vilken karaktär i TV-serien ”The Vampire Diaries” är den första hybriden och vem är skådepelaren bakom denna roll? ',
+    answerOption1: 'Elijah Mikaelson, spelad av Daniel Gillies',
+    answerOptionX: 'Klaus Mikaelson, spelad av Joseph Morgan',
+    answerOption2: 'Damon Salvatore och spelas av Ian somerholder',
+    correctAnswer: 'Klaus Mikaelson, spelad av Joseph Morgan',
+  },
+  {
+    question: 'I vilken TV-serie är en svensk skådespelare med?',
+    answerOption1: 'The Originals',
+    answerOptionX: 'True Blood',
+    answerOption2: 'Buffy the Vampire Slayer',
+    correctAnswer: 'True Blood',
+  },
 ];
 
 window.onload = () => {
   displayQuestion();
 };
+
+
+
