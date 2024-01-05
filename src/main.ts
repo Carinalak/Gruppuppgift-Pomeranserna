@@ -1,5 +1,5 @@
 import displayQuestion from "./answerCurrentQuestion";
-import "./scss/style.scss"; // Importera huvud-SCSS-filen
+import "./scss/style.scss";
 
 /**
  * Här definierar vi en mall för hur vi vill att vår array ska se ut.
@@ -16,8 +16,6 @@ export interface QuizQuestion {
 	correctAnswer: string;
 }
 
-// Här skriver vi att vår array med namnet myExampleArray ska följa reglerna (interfacet)
-// i IExampleArray och att det är en array genom att vi sätter [] efter
 export let newQuizBox: QuizQuestion[] = [
 	{
 		question: "Vem regisserade Jurassic Park",
