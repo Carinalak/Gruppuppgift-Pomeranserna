@@ -1,5 +1,10 @@
 import { QuizQuestion, newQuizBox } from './main';
 
+type QuestionResult = {
+  question: string;
+  answeredCorrectly: boolean;
+};
+
 const NUMBER_OF_QUESTIONS_IN_QUIZ = 10;
 
 let displayedQuestions: number[] = [];
@@ -8,11 +13,6 @@ let questionResults: QuestionResult[] = [];
 let answeredQuestionsCount = 0;
 let score = 0;
 const scoreElement = document.getElementById('score');
-
-type QuestionResult = {
-  question: string;
-  answeredCorrectly: boolean;
-};
 
 const getRandomQuestionIndex = (): number => {
   const indices = [...newQuizBox.keys()];
