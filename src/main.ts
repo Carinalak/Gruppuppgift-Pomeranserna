@@ -16,8 +16,6 @@ export interface QuizQuestion {
   correctAnswer: string;
 }
 
-// Här skriver vi att vår array med namnet myExampleArray ska följa reglerna (interfacet)
-// i IExampleArray och att det är en array genom att vi sätter [] efter
 export let newQuizBox: QuizQuestion[] = [
   {
     question: 'Vem regisserade Jurassic Park',
