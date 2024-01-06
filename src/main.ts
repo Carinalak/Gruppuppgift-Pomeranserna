@@ -1,6 +1,6 @@
 import displayQuestion from "./answerCurrentQuestion";
 import "./scss/style.scss";
-import { startQuiz } from './timeCount';
+import startQuiz from "./timeCount";
 /**
  * Här definierar vi en mall för hur vi vill att vår array ska se ut.
  * Ett så kallat "interface".
