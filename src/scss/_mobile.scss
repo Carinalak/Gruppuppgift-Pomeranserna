@@ -93,15 +93,18 @@ main {
 	align-items: center;
 }
 .quizbox {
-	width: 60%;
+	width: 90%;
 	text-align: center;
 }
 .question{
 	padding: 15px;
-	overflow-y: auto;
+	padding: 0 10px;
+	height: 80px; /* Ange den önskade höjden för .question */
+	overflow-y: auto; 
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	background-color: #8d0a1142;
 }
 
 footer {
