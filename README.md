@@ -1,5 +1,12 @@
-# Projektbeskrivning:
-Vi har fått i uppdrag att skapa en quiz, med hjälp av de kunskaper vi har fått hittills i våra kurser på Medieinstitutet - HTML, CSS, SCSS, samt Javascript som vi lär oss just nu. Vår grupp bestämde oss för en Quiz i underhållning. Vi som arbetar med projektet är: Michael Inma, Carina Lakosil, Yesenia Martinez, Nell Andersson, och Alexander Forselius. Vi har fyra veckor på oss att slutföra arbetet, dec 2023 - jan 2024.
+# Projektbeskrivning: 📃
+Vi har fått i uppdrag att skapa en quiz, med hjälp av de kunskaper vi har fått hittills i våra kurser på Medieinstitutet - HTML, CSS, SCSS, samt Javascript som vi lär oss just nu. Vår grupp bestämde oss för en Quiz i underhållning. Vi som arbetar med projektet är: Nell Andersson, Carina Lakosil, Yesenia Martinez och Michael Inma,. Vi har fyra veckor på oss att slutföra arbetet, dec 2023 - jan 2024. Med den här uppgiften har vi två olika skolämnen vi ska få betyg i: JavaScript grund samt Agilt projektarbete. Därför bifogar vi bilder på vår backlog här, så man ser hur processen har gått till under de fyra veckor vi jobbade på det.
+# Verktyg  	🔧
+JavaScript  
+TypeScript  
+HTML  
+CSS  
+SCSS  
+Visual Studio Code  
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ZejtqupA)
@@ -64,18 +71,30 @@ Klicka i vilka krav ni har gjort:
   - [ ] Man ska kunna välja att spela mellan lätta, medelsvåra och svåra frågor. Planera hur detta påverkar highscoren.
   - [ ] Det ska vara som en julkalender: bakom varje lucka (24 st) så visas det X antal nya frågor per dag.
 
-Wireframe för mobilversion ser ut såhär:  
+### Wireframe för mobilversion ser ut såhär:  
   ![Wireframe för mobil version](src/assets/images/Wireframe-mobile.png)  
-Wireframe för tablet och desktopversion ser ut såhär:  
+### Wireframe för tablet och desktopversion ser ut såhär:  
   ![Wireframe för mobil version](src/assets/images/Wireframe-desktop.png)  
-Flowchart för sidan:  
+### Flowchart för sidan:  
   ![Wireframe för mobil version](src/assets/images/flowchart.png)
 
 # Produkt Backlog
 
 ## Vecka 1
-![Wireframe för mobil version](src/assets/images/sprint1.png)  
+![Product Backlog vecka 1](src/assets/images/sprint1.png)  
 ## Vecka 2
-![Wireframe för mobil version](src/assets/images/sprint2.png) 
+![Product Backlog vecka 2](src/assets/images/sprint2.png) 
+## Vecka 3
+![Product Backlog vecka 3](src/assets/images/sprint3.png) 
+## Vecka 4
+![Product Backlog vecka 4](src/assets/images/sprint4.png) 
+## Sailboat Retrospective
+### Vi gjorde en Sailboat retrospective:  
+![Sailboat retrospective](src/assets/images/sailboat.png)
+
+
+
+
+
 
 
