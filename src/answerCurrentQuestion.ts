@@ -22,11 +22,20 @@ const getRandomQuestionIndex = (): number => {
 };
 
 const updateProgressBar = (): void => {
-  const progressBar = document.getElementById('progressBar') as HTMLDivElement;
-  if (progressBar) {
-    const progressPercentage = ((displayedQuestions.length - 1) / NUMBER_OF_QUESTIONS_IN_QUIZ) * 100;
-    progressBar.style.width = `${progressPercentage}%`;
+  const progressBarContainer = document.getElementById('progress-bar-container') as HTMLDivElement;
+  if (!progressBarContainer) {
+    console.error('Progress bar container element not found');
+    return;
   }
+
+  const progressBar = progressBarContainer.querySelector('span') as HTMLSpanElement;
+  if (!progressBar) {
+    console.error('Progress bar element not found inside the container');
+    return;
+  }
+
+  const progressPercentage = (displayedQuestions.length / NUMBER_OF_QUESTIONS_IN_QUIZ) * 100;
+  progressBar.style.width = `${progressPercentage}%`;
 };
 let currentQuestionNumber = 1;
 const displayQuestion = () => {
