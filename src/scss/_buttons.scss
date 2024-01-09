@@ -4,18 +4,30 @@
 	height: 30px;
 	margin-block: 0.8em;
 	background-color: rgb(218, 218, 218);
+	cursor: pointer;
 }
-
 .correct {
 	background-color: green;
 }
-
 .wrong {
 	background-color: red;
 }
-
 .answer-btn-container {
 	display: flex;
 	flex-direction: column;
 	margin-top: 2em;
+}
+// button:hover {
+// 	background-color: #525252; 
+// 	color: #fff;
+// }
+.start-btn{
+	border: none;
+	padding: 10px 30px;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+.start-btn:hover{
+	background-color: rgb(141, 141, 141);
+	color: #fff;
 }
