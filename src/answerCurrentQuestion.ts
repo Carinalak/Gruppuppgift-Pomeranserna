@@ -10,7 +10,7 @@ const NUMBER_OF_QUESTIONS_IN_QUIZ = 10;
 let displayedQuestions: number[] = [];
 let currentQuestionIndex: number | undefined;
 let questionResults: QuestionResult[] = [];
-let answeredQuestionsCount = 0;
+export let answeredQuestionsCount = 0;
 let score = 0;
 const scoreElement = document.getElementById('score');
 
@@ -28,17 +28,19 @@ const updateProgressBar = (): void => {
     progressBar.style.width = `${progressPercentage}%`;
   }
 };
-
+let currentQuestionNumber = 1;
 const displayQuestion = () => {
   currentQuestionIndex = getRandomQuestionIndex();
   displayedQuestions.push(currentQuestionIndex);
   const question = newQuizBox[currentQuestionIndex];
   const questionElement = document.getElementById('question');
+  const currentQuestionNumberElement = document.getElementById('currentQuestionNumber');
 
-  if (questionElement) {
+  if (questionElement && currentQuestionNumberElement) {
     questionElement.innerText = question.question;
+    currentQuestionNumberElement.innerText = currentQuestionNumber.toString();
   } else {
-    console.error('Question element not found');
+    console.error('Question element or currentQuestionNumber element not found');
   }
 
   const answerKeys: (keyof QuizQuestion)[] = ['answerOption1', 'answerOptionX', 'answerOption2'];
@@ -72,7 +74,7 @@ const checkAnswer = (selectedButtonIndex: number) => {
   } else {
     console.error('Score element not found');
   }
-
+  currentQuestionNumber++;
   button.classList.add(correct ? 'correct' : 'wrong');
   answeredQuestionsCount++;
   questionResults.push({

@@ -26,11 +26,14 @@
       <section class="main-page">
         <!-- --------------------------- Nedan ska huvudinnehållet för sidan ligga: -------------------------------------- -->
         <article class="quizbox-container">
-          <div class="quizbox">
-            <h2 id="questionNumber" class="question-number">Fråga 1 av 10</h2>
+          <div id="quiz-start" class="quiz-start">
+            <h1>Välkommen!</h1>
+            <button id="start-btn" class="start-btn">Starta quizet</button>
+          </div>
+          <div id="msg"></div>
+          <div class="quizbox hidden" id="quizbox">
+            <h2 id="questionNumber" class="question-number">Fråga <span id="currentQuestionNumber">1</span> av 10</h2>
             <div id="score" class="score"></div>
-            <!-- Här lägger vi in poängräknare -->
-            <div id="timeCount" class="time-count">Tid: 0:00</div>
             <!-- Här lägger vi in tidsräknare -->
             <div>
               <div id="question">Question will go here</div>
@@ -43,10 +46,12 @@
             <div id="progress-bar-container">
               <div id="progressBar" class="progress-bar"></div>
             </div>
+            <!-- Här lägger vi in poängräknare -->
+            <div id="timeCount" class="time-count"></div>
             <!-- Här lägger vi in den slumpade frågan -->
           </div>
         </article>
-        <article id="resultsContainer" class="results-container"></article>
+        <article id="resultsContainer" class="results-container" style="display: none"></article>
         <!-- --------------------------------------- Huvudinnehåll slutar här ------------------------------------------- -->
       </section>
       <section class="right-side"></section>
