@@ -5,7 +5,7 @@ const NUMBER_OF_QUESTIONS_IN_QUIZ = 10;
 let displayedQuestions: number[] = [];
 let currentQuestionIndex: number | undefined;
 let questionResults: QuestionResult[] = [];
-let answeredQuestionsCount = 0;
+export let answeredQuestionsCount = 0;
 let score = 0;
 const scoreElement = document.getElementById("score");
 
