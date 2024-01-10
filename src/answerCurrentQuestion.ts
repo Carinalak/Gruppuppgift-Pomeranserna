@@ -1,6 +1,19 @@
-import { QuizQuestion, newQuizBox } from './main';
 import { finalTime } from './timeCount';
+import { QuizQuestion, newQuizBox, playerArray } from './main';
 
+function endMessage(value: number): string {
+  if (value >= 0 && value <= 3) {
+    return `Ajdå ${playerArray.playerName}, bättre kan du!. Testa igen!`;
+  } else if (value >= 4 && value <= 6) {
+    return 'Grymt jobbat! men de känns som att du kan bättre.';
+  } else if (value >= 7 && value <= 9) {
+    return `Bra jobbat ${playerArray.playerName}, fan va grym du är!!`;
+  } else if (value === 10) {
+    return `${playerArray.playerName} är bäst!, alla rätt! whoop whoop!`;
+  } else {
+    throw new Error('Parameter must be between 0 and 10');
+  }
+}
 type QuestionResult = {
   question: string;
   answeredCorrectly: boolean;
@@ -118,8 +131,40 @@ const checkAnswer = (selectedButtonIndex: number) => {
     const retryButton = document.createElement('button');
     retryButton.className = 'retry-button';
     retryButton.innerText = 'Prova igen?';
-    retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
+
+    // Add event listener to the retry button directly
+    retryButton.addEventListener('click', reStartGame);
+
+    function reStartGame() {
+      // Reset score
+      score = 0;
+      if (scoreElement) {
+        scoreElement.innerText = `Poäng: ${score}`;
+      } else {
+        console.error('Score element not found');
+      }
+
+      // Reset current question number and answered questions count
+      currentQuestionNumber = 1;
+      answeredQuestionsCount = 0;
+
+      // Reset the progress bar
+      updateProgressBar();
+
+      // Switch visibility of containers
+      const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
+      quizBoxContainer.classList.remove('hidden');
+      resultsContainer.classList.add('hidden');
+
+      // Display a new question
+      displayQuestion();
+    }
+
+    const endText = document.createElement('div');
+    endText.className = 'end-Message';
+    endText.innerText = endMessage(correctAnswers);
+    resultsContainer.appendChild(endText);
 
     const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
     quizBoxContainer.classList.add('hidden');
