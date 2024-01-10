@@ -27,15 +27,24 @@ function startQuiz() {
        const countInterval = setInterval(timeQuiz,1000);
 
         function timeQuiz() {
-            intervalCount += 0.1;
+            intervalCount += 1;
+
+            const min = Math.floor(intervalCount / 60);
+            const sec = intervalCount % 60;
+
             if (timeCount) {
-                timeCount.innerHTML = `<div> Tid: ${intervalCount.toFixed(1)}</div>`;
+                timeCount.innerHTML = `<div> Tid:  ${time(min)}:${time(sec)}</div>`;
             } 
             if(answeredQuestionsCount >= 10){
                 clearInterval(countInterval);
             }
         }
+
     }
+    function time(number: number){
+        return number < 10 ? `0${number}` : number;
+    }
+
 }
 
 export default startQuiz;
