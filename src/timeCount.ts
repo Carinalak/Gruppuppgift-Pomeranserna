@@ -9,8 +9,8 @@ function startQuiz() {
   if (quizBox && quizStartCon && msg) {
     quizStartCon.classList.add('hidden');
 
-    msg.innerHTML = `<div class="msg">
-        <p>Spelet börjar nu!</p>
+        msg.innerHTML = `<div class="msg">
+        <h2>Spelet börjar nu!</h2>
         </div>
         `;
 
