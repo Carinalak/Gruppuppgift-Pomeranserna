@@ -1,15 +1,5 @@
 import { QuizQuestion, newQuizBox, playerArray } from './main';
-
-// function highScore(points: number, time: number, name: string) {
-//   function removeDotFromNumber(num: number): string {
-//     const numStr = num.toString();
-//     return numStr.split('.')[0];
-//   }
-//   let score = (points / time) * 10000;
-//   const highScoreText = document.createElement('div');
-//   highScoreText.className = 'high-Score-Text';
-//   highScoreText.innerText = `${name} - ${removeDotFromNumber(score)}`;
-// }
+// import startQuiz from './timeCount';
 
 function endMessage(value: number): string {
   if (value >= 0 && value <= 3) {
@@ -142,8 +132,27 @@ const checkAnswer = (selectedButtonIndex: number) => {
     const retryButton = document.createElement('button');
     retryButton.className = 'retry-button';
     retryButton.innerText = 'Prova igen?';
-    retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
+
+    const reStartBtn = document.querySelector('.retry-button');
+    reStartBtn?.addEventListener('click', reStartGame);
+    function reStartGame() {
+      const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
+      quizBoxContainer.classList.remove('hidden');
+      resultsContainer.classList.remove('visible');
+      quizBoxContainer.classList.add('visible');
+      resultsContainer.classList.add('hidden');
+      displayQuestion();
+    }
+    // if (reStartBtn) {
+    //   reStartBtn.addEventListener('click', saghej);
+    // } else {
+    //   console.error('Button not found');
+    // }
+
+    // function saghej() {
+    //   console.log('hej');
+    // }
 
     const endText = document.createElement('div');
     endText.className = 'end-Message';
