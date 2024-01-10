@@ -93,11 +93,11 @@ const checkAnswer = (selectedButtonIndex: number) => {
 
   const displayResults = () => {
     const resultsContainer = document.getElementById('resultsContainer') as HTMLDivElement;
-    resultsContainer.style.display = 'none';
+    resultsContainer.classList.add('visible');
     resultsContainer.innerHTML = '';
 
     const congratsElement = document.createElement('h2');
-    congratsElement.className = 'question-number';
+    congratsElement.className = 'congratulations';
     congratsElement.innerText = 'Grattis!';
     resultsContainer.appendChild(congratsElement);
 
@@ -111,26 +111,18 @@ const checkAnswer = (selectedButtonIndex: number) => {
 
     const timeElement = document.createElement('div');
     timeElement.className = 'time';
-    timeElement.innerText = 'Du klarade frågorna på tiden X';
+    timeElement.innerText = 'Du klarade frågorna på tiden X.';
     resultsContainer.appendChild(timeElement);
 
     const retryButton = document.createElement('button');
+    retryButton.className = 'retry-button';
     retryButton.innerText = 'Prova igen?';
     retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
 
-    // questionResults.forEach((result, index) => {
-    // 	const resultElement = document.createElement("div");
-    // 	resultElement.className = result.answeredCorrectly ? "correct-answer" : "wrong-answer";
-    // 	resultElement.innerHTML = `<strong>Fråga ${index + 1}:</strong> ${result.question} - ${
-    // 		result.answeredCorrectly ? "Correct" : "Wrong"
-    // 	}`;
-    // 	resultsContainer.appendChild(resultElement);
-    // });
-
     const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
-    quizBoxContainer.style.display = 'none';
-    resultsContainer.style.display = 'block';
+    quizBoxContainer.classList.add('hidden');
+    resultsContainer.classList.add('visible');
   };
 
   setTimeout(() => {
