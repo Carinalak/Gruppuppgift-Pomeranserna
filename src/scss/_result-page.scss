@@ -1,0 +1,38 @@
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: grid;
+}
+
+.congratulations {
+  font-size: 3em;
+  justify-self: center;
+  display: flex;
+}
+
+.score {
+  font-size: 1.2rem;
+  justify-self: center;
+}
+
+.time {
+  font-size: 1.2rem;
+  justify-self: center;
+}
+
+.retry-button {
+  width: 60%;
+  justify-self: center;
+  margin-top: 2em;
+  border: none;
+  border-radius: 8px;
+  height: 3em;
+  background-color: green;
+  color: white;
+}
+
+.results-container {
+  margin-top: 3em;
+}
