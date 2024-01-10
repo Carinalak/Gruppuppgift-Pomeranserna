@@ -66,14 +66,14 @@ main {
 }
 .left-side {
 	width: 5%;
-	height: 100vh;
+	// height: 100vh;
 	// position: absolute;
 	background-color: #8d0a10;
 	left: 0;
 }
 .right-side {
 	width: 5%;
-	height: 100vh;
+	// height: 100vh;
 	// position: absolute;
 	background-color: #8d0a10;
 	right: 0;
@@ -94,17 +94,6 @@ main {
 .quizbox {
 	width: 300px;
 	text-align: center;
-}
-.msg{
-	// background-color: #5c1d1d60;
-	// border-radius: 5px;
-	// width: 100%;
-	margin: auto;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 70px;
 }
 .quiz-start h1{
 	margin-bottom: 30px;

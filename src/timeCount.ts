@@ -10,7 +10,7 @@ function startQuiz() {
         quizStartCon.classList.add('hidden');
 
         msg.innerHTML = `<div class="msg">
-        <p>Spelet börjar nu!</p>
+        <h2>Spelet börjar nu!</h2>
         </div>
         `;
 
