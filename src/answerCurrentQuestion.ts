@@ -1,4 +1,5 @@
 import { QuizQuestion, newQuizBox } from './main';
+import { finalTime } from './timeCount';
 
 type QuestionResult = {
   question: string;
@@ -111,7 +112,7 @@ const checkAnswer = (selectedButtonIndex: number) => {
 
     const timeElement = document.createElement('div');
     timeElement.className = 'time';
-    timeElement.innerText = 'Du klarade frågorna på tiden X.';
+    timeElement.innerText = `Du klarade frågorna på tiden ${finalTime}.`;
     resultsContainer.appendChild(timeElement);
 
     const retryButton = document.createElement('button');
