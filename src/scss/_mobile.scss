@@ -22,7 +22,7 @@ nav {
 	background-size: cover;
 	width: 100%;
 	min-height: 105px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 20;
@@ -78,7 +78,9 @@ main {
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	padding-top: 100px;
+	padding-top: 55px;
+	padding-bottom: 40px;
+	
 }
 .quizbox-container {
 	display: flex;
@@ -99,6 +101,7 @@ main {
 	height: max-content;
     justify-content: center;
 	border-radius: 5px;
+	margin-top: 90px;
 }
 .quiz-start h1{
 	margin-bottom: 30px;
@@ -108,6 +111,7 @@ main {
     background-color: #8d0a0ab4;
     border-radius: 5px;
 	padding: 10px 10%;
+	margin: 100px;
 }
 .hidden {
 	clip: rect(0 0 0 0);
@@ -129,7 +133,7 @@ footer {
 	background-image: url("../assets/images/movie-bottom.jpg");
 	background-size: cover;
 	width: 100%;
-	min-height: 50px;
+	min-height: 40px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
