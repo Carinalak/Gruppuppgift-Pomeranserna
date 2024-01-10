@@ -26,7 +26,7 @@ nav {
 	background-size: cover;
 	width: 100%;
 	min-height: 105px;
-	position: absolute;
+	// position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 20;
@@ -67,14 +67,14 @@ main {
 .left-side {
 	width: 5%;
 	height: 100vh;
-	position: absolute;
+	// position: absolute;
 	background-color: #8d0a10;
 	left: 0;
 }
 .right-side {
 	width: 5%;
 	height: 100vh;
-	position: absolute;
+	// position: absolute;
 	background-color: #8d0a10;
 	right: 0;
 }
@@ -89,6 +89,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
 }
 .quizbox {
 	width: 300px;
@@ -139,7 +140,7 @@ footer {
 	background-size: cover;
 	width: 100%;
 	min-height: 50px;
-	position: fixed;
+	// position: fixed;
 	bottom: 0;
 	left: 0;
 	text-align: center;

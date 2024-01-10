@@ -11,6 +11,12 @@
   justify-self: center;
   display: flex;
 }
+.question{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+}
 
 .score {
   font-size: 1.2rem;
