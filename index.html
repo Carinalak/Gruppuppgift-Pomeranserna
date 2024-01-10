@@ -27,7 +27,6 @@
     </header>
     <main>
       <section class="left-side"></section>
-
       <section class="main-page">
         <!-- --------------------------- Nedan ska huvudinnehållet för sidan ligga: -------------------------------------- -->
         <article class="quizbox-container">
@@ -37,7 +36,7 @@
           </div>
           <div id="msg"></div>
           <div class="quizbox hidden" id="quizbox">
-            <h2 class="question-number">Fråga <span id="currentQuestionNumber">1</span> av 10</h2>
+            <h2 id="questionNumber" class="question-number">Fråga <span id="currentQuestionNumber">1</span> av 10</h2>
             <div id="score" class="score"></div>
             <div>
               <div id="question">Question will go here</div>
@@ -51,6 +50,7 @@
               <span style="width: 25%"></span>
             </div>
             <div id="timeCount" class="time-count"></div>
+
           </div>
         </article>
         <article id="resultsContainer" class="results-container"></article>
