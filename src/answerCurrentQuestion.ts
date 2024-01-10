@@ -1,4 +1,29 @@
-import { QuizQuestion, newQuizBox } from './main';
+import { QuizQuestion, newQuizBox, playerArray } from './main';
+
+// function highScore(points: number, time: number, name: string) {
+//   function removeDotFromNumber(num: number): string {
+//     const numStr = num.toString();
+//     return numStr.split('.')[0];
+//   }
+//   let score = (points / time) * 10000;
+//   const highScoreText = document.createElement('div');
+//   highScoreText.className = 'high-Score-Text';
+//   highScoreText.innerText = `${name} - ${removeDotFromNumber(score)}`;
+// }
+
+function endMessage(value: number): string {
+  if (value >= 0 && value <= 3) {
+    return `Ajdå ${playerArray.playerName}, bättre kan du!. Testa igen!`;
+  } else if (value >= 4 && value <= 6) {
+    return 'Grymt jobbat! men de känns som att du kan bättre.';
+  } else if (value >= 7 && value <= 9) {
+    return `Bra jobbat ${playerArray.playerName}, fan va grym du är!!`;
+  } else if (value === 10) {
+    return `${playerArray.playerName} är bäst!, alla rätt! whoop whoop!`;
+  } else {
+    throw new Error('Parameter must be between 0 and 10');
+  }
+}
 
 type QuestionResult = {
   question: string;
@@ -119,6 +144,11 @@ const checkAnswer = (selectedButtonIndex: number) => {
     retryButton.innerText = 'Prova igen?';
     retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
+
+    const endText = document.createElement('div');
+    endText.className = 'end-Message';
+    endText.innerText = endMessage(correctAnswers);
+    resultsContainer.appendChild(endText);
 
     const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
     quizBoxContainer.classList.add('hidden');
