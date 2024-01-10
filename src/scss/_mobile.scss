@@ -79,7 +79,8 @@ main {
 	justify-content: center;
 	width: 100vw;
 	padding-top: 55px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
+	
 }
 .quizbox-container {
 	display: flex;
@@ -132,12 +133,11 @@ footer {
 	background-image: url("../assets/images/movie-bottom.jpg");
 	background-size: cover;
 	width: 100%;
-	min-height: 50px;
+	min-height: 40px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	text-align: center;
-	
 }
 .footer-text {
 	padding: 5px;
