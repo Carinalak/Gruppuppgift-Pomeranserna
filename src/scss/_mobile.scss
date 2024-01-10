@@ -91,17 +91,19 @@ main {
 	align-items: center;
 }
 .quizbox {
-	width: 90%;
+	width: 300px;
 	text-align: center;
 }
 .msg{
-	background-color: #5c1d1d60;
-	width: 100%;
+	// background-color: #5c1d1d60;
+	// border-radius: 5px;
+	// width: 100%;
 	margin: auto;
+	padding: 10px;
 	display: flex;
-	height: max-content;
-    justify-content: center;
-	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
 }
 .quiz-start h1{
 	margin-bottom: 30px;
@@ -110,7 +112,11 @@ main {
 	text-align: center;
     background-color: #8d0a0ab4;
     border-radius: 5px;
-	padding: 10px 10%;
+	padding: 10px 10px 32px 10px;
+
+}
+.score{
+	height: 30px;
 }
 .hidden {
 	clip: rect(0 0 0 0);
