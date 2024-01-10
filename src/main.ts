@@ -8,6 +8,35 @@ import startQuiz from './timeCount';
  * Prova t.ex. att lägga till en egenskap i interfacet, och notera hur arrayen nedanför
  * får rödmarkeringar där denna egenskap saknas.
  */
+
+const addButton = document.getElementById('addButton');
+addButton?.addEventListener('click', addPlayerName);
+function addPlayerName(): void {
+  let inputElement = document.getElementById('nameInput') as HTMLInputElement;
+  playerArray.playerName = inputElement.value;
+  inputElement.value = '';
+}
+
+interface player {
+  playerName: string;
+  playerScore: number;
+}
+
+export let playerArray: player = {
+  playerName: '',
+  playerScore: 0,
+};
+
+function highScore(points: number, time: number, name: string) {
+  function removeDotFromNumber(num: number): string {
+    const numStr = num.toString();
+    return numStr.split('.')[0];
+  }
+  let score = (points / time) * 10000;
+  console.log(`${name} - ${removeDotFromNumber(score)}`);
+}
+highScore(10, 100, 'Adam');
+
 export interface QuizQuestion {
   question: string;
   answerOption1: string;

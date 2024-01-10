@@ -1,4 +1,19 @@
-import { QuizQuestion, newQuizBox } from './main';
+import { QuizQuestion, newQuizBox, playerArray } from './main';
+// import startQuiz from './timeCount';
+
+function endMessage(value: number): string {
+  if (value >= 0 && value <= 3) {
+    return `Ajdå ${playerArray.playerName}, bättre kan du!. Testa igen!`;
+  } else if (value >= 4 && value <= 6) {
+    return 'Grymt jobbat! men de känns som att du kan bättre.';
+  } else if (value >= 7 && value <= 9) {
+    return `Bra jobbat ${playerArray.playerName}, fan va grym du är!!`;
+  } else if (value === 10) {
+    return `${playerArray.playerName} är bäst!, alla rätt! whoop whoop!`;
+  } else {
+    throw new Error('Parameter must be between 0 and 10');
+  }
+}
 
 type QuestionResult = {
   question: string;
@@ -117,8 +132,32 @@ const checkAnswer = (selectedButtonIndex: number) => {
     const retryButton = document.createElement('button');
     retryButton.className = 'retry-button';
     retryButton.innerText = 'Prova igen?';
-    retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
+
+    const reStartBtn = document.querySelector('.retry-button');
+    reStartBtn?.addEventListener('click', reStartGame);
+    function reStartGame() {
+      const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
+      quizBoxContainer.classList.remove('hidden');
+      resultsContainer.classList.remove('visible');
+      quizBoxContainer.classList.add('visible');
+      resultsContainer.classList.add('hidden');
+      displayQuestion();
+    }
+    // if (reStartBtn) {
+    //   reStartBtn.addEventListener('click', saghej);
+    // } else {
+    //   console.error('Button not found');
+    // }
+
+    // function saghej() {
+    //   console.log('hej');
+    // }
+
+    const endText = document.createElement('div');
+    endText.className = 'end-Message';
+    endText.innerText = endMessage(correctAnswers);
+    resultsContainer.appendChild(endText);
 
     const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
     quizBoxContainer.classList.add('hidden');
