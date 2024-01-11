@@ -1,28 +1,21 @@
 @media screen and (min-width: 640px) {
-    .hamburgermenu {
-        position: absolute;
-        left: 10%;
-    }
-    h1 {
-       
-        font-size: 2.2rem;
-    }
-    .left-side {
-        width: 15%;
-        
-    }
-    .right-side {
-        width: 15%;
-        
-    }
-    .quizbox-container {
-        // margin-top: 5%;
-    
-    }
-    .quizbox {
-        width: 500px;
-    }
-    .quiz-start{
-        width: 400px;
-    }
+  .hamburgermenu {
+    position: absolute;
+    left: 10%;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .left-side {
+    width: 15%;
+  }
+  .right-side {
+    width: 15%;
+  }
+  .quizbox {
+    width: 500px;
+  }
+  .quiz-start {
+    width: 400px;
+  }
 }
