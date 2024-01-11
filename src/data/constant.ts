@@ -1,6 +1,6 @@
 import { IQuizQuestion } from '../types';
 
-export const NUMBER_OF_QUESTIONS_IN_QUIZ = 10;
+export const NUMBER_OF_QUESTIONS_IN_QUIZ = 2;
 export const scoreElement = document.getElementById('score');
 
 export let newQuizBox: IQuizQuestion[] = [

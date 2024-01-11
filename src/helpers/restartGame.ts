@@ -1,14 +1,10 @@
-import { gameState } from '../data/variable';
-import { displayQuestion } from './displayQuestion';
+import startQuiz from './timeCount';
 
 export const restartGame = () => {
   const resultsContainer = document.getElementById('resultsContainer') as HTMLDivElement;
+  const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
   resultsContainer.classList.remove('visible');
   resultsContainer.innerHTML = '';
-  gameState.currentQuestionNumber = 1;
-  gameState.score = 0;
-  gameState.secondsPassed = 0;
-  const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
   quizBoxContainer.classList.remove('hidden');
-  displayQuestion();
+  startQuiz();
 };

@@ -1,4 +1,5 @@
 import { gameState } from '../data/variable';
+import { displayQuestion } from './displayQuestion';
 
 const timeCount: HTMLDivElement | null = document.querySelector('#timeCount');
 const msg: HTMLDivElement | null = document.querySelector('#msg');
@@ -10,6 +11,10 @@ const ONE_SECOND = 1000;
 export let finalTime = '';
 
 function startQuiz() {
+  gameState.currentQuestionNumber = 1;
+  gameState.score = 0;
+  gameState.secondsPassed = 0;
+
   if (quizBox && quizStartCon && msg) {
     quizStartCon.classList.add('hidden');
 
@@ -50,6 +55,7 @@ function startQuiz() {
   function time(number: number) {
     return number < 10 ? `0${number}` : number;
   }
+  displayQuestion();
 }
 
 export default startQuiz;
