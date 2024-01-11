@@ -4,12 +4,13 @@ const timeCount: HTMLDivElement | null = document.querySelector('#timeCount');
 const msg: HTMLDivElement | null = document.querySelector('#msg');
 const quizBox: HTMLDivElement | null = document.querySelector('#quizbox');
 const quizStartCon: HTMLDivElement | null = document.querySelector('#quiz-start');
+export let finalTime = '';
 
 function startQuiz() {
   if (quizBox && quizStartCon && msg) {
     quizStartCon.classList.add('hidden');
 
-        msg.innerHTML = `<div class="msg">
+    msg.innerHTML = `<div class="msg">
         <h2>Spelet börjar nu!</h2>
         </div>
         `;
@@ -34,6 +35,12 @@ function startQuiz() {
       if (timeCount) {
         timeCount.innerHTML = `<div> Tid:  ${time(min)}:${time(sec)}</div>`;
       }
+      if (answeredQuestionsCount >= 10) {
+        clearInterval(countInterval);
+      }
+
+      finalTime = `${time(min)}:${time(sec)}`;
+
       if (answeredQuestionsCount >= 10) {
         clearInterval(countInterval);
       }
