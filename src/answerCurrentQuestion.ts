@@ -1,5 +1,5 @@
 import { QuizQuestion, newQuizBox, playerArray } from './main';
-// import startQuiz from './timeCount';
+import { finalTime } from './timeCount';
 
 function endMessage(value: number): string {
   if (value >= 0 && value <= 3) {
@@ -14,7 +14,6 @@ function endMessage(value: number): string {
     throw new Error('Parameter must be between 0 and 10');
   }
 }
-
 type QuestionResult = {
   question: string;
   answeredCorrectly: boolean;
@@ -126,33 +125,14 @@ const checkAnswer = (selectedButtonIndex: number) => {
 
     const timeElement = document.createElement('div');
     timeElement.className = 'time';
-    timeElement.innerText = 'Du klarade frågorna på tiden X.';
+    timeElement.innerText = `Du klarade frågorna på tiden ${finalTime}.`;
     resultsContainer.appendChild(timeElement);
 
     const retryButton = document.createElement('button');
     retryButton.className = 'retry-button';
     retryButton.innerText = 'Prova igen?';
+    retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
-
-    const reStartBtn = document.querySelector('.retry-button');
-    reStartBtn?.addEventListener('click', reStartGame);
-    function reStartGame() {
-      const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
-      quizBoxContainer.classList.remove('hidden');
-      resultsContainer.classList.remove('visible');
-      quizBoxContainer.classList.add('visible');
-      resultsContainer.classList.add('hidden');
-      displayQuestion();
-    }
-    // if (reStartBtn) {
-    //   reStartBtn.addEventListener('click', saghej);
-    // } else {
-    //   console.error('Button not found');
-    // }
-
-    // function saghej() {
-    //   console.log('hej');
-    // }
 
     const endText = document.createElement('div');
     endText.className = 'end-Message';
