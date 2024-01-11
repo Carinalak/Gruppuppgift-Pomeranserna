@@ -1,5 +1,5 @@
-import { finalTime } from './timeCount';
 import { QuizQuestion, newQuizBox, playerArray } from './main';
+import { finalTime } from './timeCount';
 
 function endMessage(value: number): string {
   if (value >= 0 && value <= 3) {
@@ -131,35 +131,8 @@ const checkAnswer = (selectedButtonIndex: number) => {
     const retryButton = document.createElement('button');
     retryButton.className = 'retry-button';
     retryButton.innerText = 'Prova igen?';
+    retryButton.onclick = () => {};
     resultsContainer.appendChild(retryButton);
-
-    // Add event listener to the retry button directly
-    retryButton.addEventListener('click', reStartGame);
-
-    function reStartGame() {
-      // Reset score
-      score = 0;
-      if (scoreElement) {
-        scoreElement.innerText = `Poäng: ${score}`;
-      } else {
-        console.error('Score element not found');
-      }
-
-      // Reset current question number and answered questions count
-      currentQuestionNumber = 1;
-      answeredQuestionsCount = 0;
-
-      // Reset the progress bar
-      updateProgressBar();
-
-      // Switch visibility of containers
-      const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
-      quizBoxContainer.classList.remove('hidden');
-      resultsContainer.classList.add('hidden');
-
-      // Display a new question
-      displayQuestion();
-    }
 
     const endText = document.createElement('div');
     endText.className = 'end-Message';

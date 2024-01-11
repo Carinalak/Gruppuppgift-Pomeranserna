@@ -1,72 +1,77 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&amp;family=Bellefair&amp;family=Barlow:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-      defer=""
-    />
-    <title>Quiz i Underhållning</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <button class="hamburgermenu" aria-label="Öppna meny">
-          <span class="hamburgerline"></span>
-          <span class="hamburgerline"></span>
-          <span class="hamburgerline"></span>
-        </button>
-        <h1>QUIZ I UNDERHÅLLNING</h1>
-      </nav>
-    </header>
-    <main>
-      <section class="left-side"></section>
 
-      <section class="main-page">
-        <!-- --------------------------- Nedan ska huvudinnehållet för sidan ligga: -------------------------------------- -->
-        <article class="quizbox-container">
-          <div id="quiz-start" class="quiz-start">
-            <h1>Välkommen!</h1>
-            <button id="start-btn" class="start-btn">Starta quizet</button>
-            <input type="text" id="nameInput" placeholder="Skriv ditt namn här" />
-            <button id="addButton">Spara</button>
-          </div>
-          <div id="msg"></div>
-          <div class="quizbox hidden" id="quizbox">
-            <h2 id="questionNumber" class="question-number">Fråga <span id="currentQuestionNumber">1</span> av 10</h2>
-            <div id="score" class="score"></div>
-            <!-- Här lägger vi in tidsräknare -->
-            <div>
-              <div id="question">Question will go here</div>
-              <div class="answer-btn-container">
-                <button id="answer1" class="answer-btn">Answer 1</button>
-                <button id="answer2" class="answer-btn">Answer 2</button>
-                <button id="answer3" class="answer-btn">Answer 3</button>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&amp;family=Bellefair&amp;family=Barlow:wght@400;700&amp;display=swap"
+    rel="stylesheet" defer="" />
+  <title>Quiz i Underhållning</title>
+  <meta name="title" content="Utmana dig med en underhållnings quiz">
+  <meta name="description" content="Ute efter en quiz? Testa ochh utmana dig med en quiz med frågor allt från filmer till musik!">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button class="hamburgermenu" aria-label="Öppna meny">
+        <span class="hamburgerline"></span>
+        <span class="hamburgerline"></span>
+        <span class="hamburgerline"></span>
+      </button>
+      <h1>QUIZ I UNDERHÅLLNING</h1>
+    </nav>
+  </header>
+  <main>
+    <section class="left-side"></section>
+    <section class="main-page">
+      <!-- --------------------------- Nedan ska huvudinnehållet för sidan ligga: -------------------------------------- -->
+      <article class="quizbox-container">
+        <div id="quiz-start" class="quiz-start">
+          <h1>Välkommen!</h1>
+          <input type="text" id="nameInput" placeholder="Skriv ditt namn här">
+          <button id="addButton" class="addButton">Spara</button>
+          <button id="start-btn" class="start-btn">Starta quizet</button>
+        </div>
+        <div id="msg"></div>
+        <div class="quizbox hidden" id="quizbox">
+          <h2 id="questionNumber" class="question-number">Fråga <span id="currentQuestionNumber">1</span> av 10</h2>
+          <div id="score" class="score"></div>
+          <div>
+            <div id="question" class="question">Question will go here</div>
+            <div class="answer-btn-container">
+              <button id="answer1" class="answer-btn">Answer 1</button>
+              <button id="answer2" class="answer-btn">Answer 2</button>
+              <button id="answer3" class="answer-btn">Answer 3</button>
             </div>
-            <div id="progress-bar-container" class="progress-bar">
-              <span style="width: 25%"></span>
-            </div>
-            <!-- Här lägger vi in poängräknare -->
-            <div id="timeCount" class="time-count"></div>
-            <!-- Här lägger vi in den slumpade frågan -->
           </div>
-        </article>
-        <article id="resultsContainer" class="results-container"></article>
-        <!-- --------------------------------------- Huvudinnehåll slutar här ------------------------------------------- -->
-      </section>
-      <section class="right-side"></section>
-    </main>
-    <footer>
-      <div class="footer-text">&copy; Pomeranserna Quizgame 2023</div>
-    </footer>
-    <div class="app" id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+          <div id="progress-bar-container" class="progress-bar">
+            <span style="width: 25%"></span>
+          </div>
+          <div id="timeCount" class="time-count"></div>
+
+        </div>
+        <div id="progress-bar-container" class="progress-bar">
+          <span style="width: 25%"></span>
+        </div>
+        <!-- Här lägger vi in poängräknare -->
+        <div id="timeCount" class="time-count"></div>
+        <!-- Här lägger vi in den slumpade frågan -->
+        </div>
+      </article>
+      <article id="resultsContainer" class="results-container"></article>
+      <!-- --------------------------------------- Huvudinnehåll slutar här ------------------------------------------- -->
+    </section>
+    <section class="right-side"></section>
+  </main>
+  <footer>
+    <div class="footer-text">&copy; Pomeranserna Quizgame 2023</div>
+  </footer>
+  <div class="app" id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

@@ -11,10 +11,17 @@
   justify-self: center;
   display: flex;
 }
+.question{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+}
 
 .score {
   font-size: 1.2rem;
   justify-self: center;
+  height: 30px;
 }
 
 .time {
@@ -33,6 +40,6 @@
   color: white;
 }
 
-.results-container {
-  margin-top: 3em;
-}
+// .results-container {
+//   margin-top: 5em;
+// }
