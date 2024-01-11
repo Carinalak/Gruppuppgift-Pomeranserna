@@ -36,7 +36,7 @@ export const displayResults = () => {
   resultsContainer.appendChild(retryButton);
 
   const endText = document.createElement('div');
-  endText.className = 'end-Message';
+  endText.className = 'end-message';
   endText.innerText = endMessage(correctAnswers);
   resultsContainer.appendChild(endText);
 
