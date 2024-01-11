@@ -97,6 +97,10 @@ Klicka i vilka krav ni har gjort:
 ![HTML-validering1](src/assets/images/validering/html-validering2.png)
 ## Validering av CSS
 ![CSS-validering1](src/assets/images/validering/css-validering1.png)
+![CSS-validering2](src/assets/images/validering/css-validering2.png)
+## Lighthouse analys
+![Lighthouse analys 1](src/assets/images/validering/lighthouse-analys1.png)
+![Lighthouse analys 2](src/assets/images/validering/lighthouse-analys2.png)
 
 
 
