@@ -92,6 +92,13 @@ Klicka i vilka krav ni har gjort:
 ### Vi gjorde en Sailboat retrospective:  
 ![Sailboat retrospective](src/assets/images/sailboat.png)
 
+## Validering av HTML
+![HTML-validering1](src/assets/images/validering/html-validering1.png)
+![HTML-validering1](src/assets/images/validering/html-validering2.png)
+## Validering av CSS
+![CSS-validering1](src/assets/images/validering/css-validering1.png)
+
+
 
 
 
