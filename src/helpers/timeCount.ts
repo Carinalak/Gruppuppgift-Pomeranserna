@@ -1,12 +1,20 @@
-import { answeredQuestionsCount } from './answerCurrentQuestion';
+import { gameState } from '../data/variable';
+import { displayQuestion } from './displayQuestion';
 
 const timeCount: HTMLDivElement | null = document.querySelector('#timeCount');
 const msg: HTMLDivElement | null = document.querySelector('#msg');
 const quizBox: HTMLDivElement | null = document.querySelector('#quizbox');
 const quizStartCon: HTMLDivElement | null = document.querySelector('#quiz-start');
+
+const ONE_SECOND = 1000;
+
 export let finalTime = '';
 
 function startQuiz() {
+  gameState.currentQuestionNumber = 1;
+  gameState.score = 0;
+  gameState.secondsPassed = 0;
+
   if (quizBox && quizStartCon && msg) {
     quizStartCon.classList.add('hidden');
 
@@ -22,26 +30,24 @@ function startQuiz() {
       quizBox.classList.remove('hidden');
     }, 1500);
 
-    let intervalCount = 0;
-
-    const countInterval = setInterval(timeQuiz, 1000);
+    const countInterval = setInterval(timeQuiz, ONE_SECOND);
 
     function timeQuiz() {
-      intervalCount += 1;
+      gameState.secondsPassed += 1;
 
-      const min = Math.floor(intervalCount / 60);
-      const sec = intervalCount % 60;
+      const min = Math.floor(gameState.secondsPassed / 60);
+      const sec = gameState.secondsPassed % 60;
 
       if (timeCount) {
         timeCount.innerHTML = `<div> Tid:  ${time(min)}:${time(sec)}</div>`;
       }
-      if (answeredQuestionsCount >= 10) {
+      if (gameState.currentQuestionNumber - 1 >= 10) {
         clearInterval(countInterval);
       }
 
       finalTime = `${time(min)}:${time(sec)}`;
 
-      if (answeredQuestionsCount >= 10) {
+      if (gameState.currentQuestionNumber - 1 >= 10) {
         clearInterval(countInterval);
       }
     }
@@ -49,6 +55,7 @@ function startQuiz() {
   function time(number: number) {
     return number < 10 ? `0${number}` : number;
   }
+  displayQuestion();
 }
 
 export default startQuiz;
