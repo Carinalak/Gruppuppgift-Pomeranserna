@@ -1,5 +1,5 @@
 # Projektbeskrivning: 📃
-Vi har fått i uppdrag att skapa en quiz, med hjälp av de kunskaper vi har fått hittills i våra kurser på Medieinstitutet - HTML, CSS, SCSS, samt Javascript som vi lär oss just nu. Vår grupp bestämde oss för en Quiz i underhållning. Vi som arbetar med projektet är: Nell Andersson, Carina Lakosil, Yesenia Martinez och Michael Inma,. Vi har fyra veckor på oss att slutföra arbetet, dec 2023 - jan 2024. Med den här uppgiften har vi två olika skolämnen vi ska få betyg i: JavaScript grund samt Agilt projektarbete. Därför bifogar vi bilder på vår backlog här, så man ser hur processen har gått till under de fyra veckor vi jobbade på det.
+Vi har fått i uppdrag att skapa en quiz, med hjälp av de kunskaper vi har fått hittills i våra kurser på Medieinstitutet - HTML, CSS, SCSS, samt Javascript som vi lär oss just nu. Vår grupp bestämde oss för en Quiz i underhållning. Vi som arbetar med projektet är: Nell Andersson, Carina Lakosil, Yesenia Martinez och Michael Inma. Vi har fyra veckor på oss att slutföra arbetet, dec 2023 - jan 2024. Med den här uppgiften har vi två olika skolämnen vi ska få betyg i: JavaScript grund samt Agilt projektarbete. Därför bifogar vi bilder på vår backlog här, så man ser hur processen har gått till under de fyra veckor vi jobbade på det.
 # Verktyg  	🔧
 JavaScript  
 TypeScript  

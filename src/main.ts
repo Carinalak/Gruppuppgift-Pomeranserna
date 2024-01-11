@@ -1,13 +1,7 @@
 import displayQuestion from './answerCurrentQuestion';
 import './scss/style.scss';
 import startQuiz from './timeCount';
-/**
- * Här definierar vi en mall för hur vi vill att vår array ska se ut.
- * Ett så kallat "interface".
- * Den är för att garantera att ALLA objekt i vår array har samtliga egenskaper.
- * Prova t.ex. att lägga till en egenskap i interfacet, och notera hur arrayen nedanför
- * får rödmarkeringar där denna egenskap saknas.
- */
+
 
 const addButton = document.getElementById('addButton');
 addButton?.addEventListener('click', addPlayerName);

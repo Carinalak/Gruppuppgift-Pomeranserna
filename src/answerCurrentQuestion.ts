@@ -27,6 +27,7 @@ let questionResults: QuestionResult[] = [];
 export let answeredQuestionsCount = 0;
 let score = 0;
 const scoreElement = document.getElementById('score');
+scoreElement.innerText = 'Poäng: 0';
 
 const getRandomQuestionIndex = (): number => {
   const indices = [...newQuizBox.keys()];
