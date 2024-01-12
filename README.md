@@ -26,8 +26,8 @@ Klicka i vilka krav ni har gjort:
 
 ### För Godkänt
 #### Kodkvalitet
-- [ ] Koden är korrekt formaterad.
-- [ ] Koden innehåller enstaka buggar, men fungerar på det stora hela.
+- [x] Koden är korrekt formaterad.
+- [x] Koden innehåller enstaka buggar, men fungerar på det stora hela.
 - [x] Ni har gjort åtminstone en mobilversion; om ni återanvänder samma layout i tablet/desktop så går det bra.
 - [x] Sidan ska vara någorlunda snygg (CSS).
 - [x] Ni har checkat av "vanliga misstag" från tidigare uppgifter, såväl HTML & CSS som JavaScript.
@@ -51,11 +51,11 @@ Klicka i vilka krav ni har gjort:
 - [x] Koden följer konventioner och praxis.
 - [x] Projektets utförande är ambitiöst och väl genomarbetat. Ni har inte tagit på er för mycket, utan sett till att det ni har är genomarbetat.
 - [x] Ni har tagit höjd för responsiv design (CSS) och CSS:en är välskriven.
-- [ ] Koden är korrekt formaterad med ESLint och Prettier.
-- [ ] Projektets kod är självdokumenterande. Där det är otydligt har du skrivit till kommentarer. Exempelvis heter variabler och funktioner på ett sådant sätt att det är tydligt vad de gör.
-- [ ] Ni har aktivt arbetat för att minska kodupprepning, men det är OK om det förekommer en del. Ibland kan kodupprepning t.ex. vara bra för att koden blir tydligare att läsa, så all upprepning är inte av ondo.
-- [ ] Ingen spaghettikod :spaghetti:
-- [ ] Anonyma funktioner används med omsorg.
+- [x] Koden är korrekt formaterad med ESLint och Prettier.
+- [x] Projektets kod är självdokumenterande. Där det är otydligt har du skrivit till kommentarer. Exempelvis heter variabler och funktioner på ett sådant sätt att det är tydligt vad de gör.
+- [x] Ni har aktivt arbetat för att minska kodupprepning, men det är OK om det förekommer en del. Ibland kan kodupprepning t.ex. vara bra för att koden blir tydligare att läsa, så all upprepning är inte av ondo.
+- [x] Ingen spaghettikod :spaghetti:
+- [x] Anonyma funktioner används med omsorg.
 - [x] Koden och projektet har en logisk struktur.
 - [x] Ni har skrivit en ordentlig README (projektbeskrivning, skrämdumpar, deltagare i arbetet).
 
@@ -64,9 +64,9 @@ Klicka i vilka krav ni har gjort:
 - [ ] Flera svarsalternativ ska kunna vara korrekta
 - [ ] Du får olika poäng beroende på hur snabbt du svarar på frågan (ni får komma på själva hur det ska funka, dokumentera i README:n)
 - [ ] Du får minuspoäng om du svarar fel
-- [x] Du ska kunna välja vem du vill spela som, eller skapa en ny användare (förutsättningen här är att man använder samma webbläsare; använd local storage). Se exempelskiss nedan.
-- [x] Implementera ett highscore (max 10 platser) med hjälp av local storage
-- [ ] Det ska finnas med en animation för rätt svar, och en animation för fel svar. Det kan t.ex. vara en stjärna som roterar, byter färg, eller en knapp som skakar. Vad ni gör spelar ingen roll, men ni ska implementera det med hjälp av GSAP.
+- [ ] Du ska kunna välja vem du vill spela som, eller skapa en ny användare (förutsättningen här är att man använder samma webbläsare; använd local storage). Se exempelskiss nedan.
+- [ ] Implementera ett highscore (max 10 platser) med hjälp av local storage
+- [x] Det ska finnas med en animation för rätt svar, och en animation för fel svar. Det kan t.ex. vara en stjärna som roterar, byter färg, eller en knapp som skakar. Vad ni gör spelar ingen roll, men ni ska implementera det med hjälp av GSAP.
 - Välj ett av nedan:
   - [ ] Man ska kunna välja att spela mellan lätta, medelsvåra och svåra frågor. Planera hur detta påverkar highscoren.
   - [ ] Det ska vara som en julkalender: bakom varje lucka (24 st) så visas det X antal nya frågor per dag.
