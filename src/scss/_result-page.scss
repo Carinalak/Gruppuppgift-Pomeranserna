@@ -11,7 +11,7 @@
   justify-self: center;
   display: flex;
 }
-.question{
+.question {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,14 +19,15 @@
 }
 
 .score {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   justify-self: center;
-  height: 30px;
+  margin-top: 0.5em;
 }
 
 .time {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   justify-self: center;
+  margin-top: 0.2em;
 }
 
 .retry-button {
@@ -40,6 +41,20 @@
   color: white;
 }
 
-// .results-container {
-//   margin-top: 5em;
-// }
+.end-message {
+  margin-top: 2em;
+  justify-self: center;
+}
+
+.high-score-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.high-score-title {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}

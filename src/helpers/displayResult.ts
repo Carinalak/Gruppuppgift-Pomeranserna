@@ -37,13 +37,17 @@ export const displayResults = () => {
   resultsContainer.appendChild(retryButton);
 
   const endText = document.createElement('div');
-  endText.className = 'end-Message';
+  endText.className = 'end-message';
   endText.innerText = endMessage(correctAnswers);
   resultsContainer.appendChild(endText);
 
   const highScoreSection = document.createElement('div');
   highScoreSection.id = 'high-Score';
-  highScoreSection.innerText = 'High Score Top 5';
+  highScoreSection.className = 'high-score-container';
+  const highScoreTitle = document.createElement('h3');
+  highScoreTitle.className = 'high-score-title';
+  highScoreTitle.innerText = 'High Score Top 5';
+  highScoreSection.appendChild(highScoreTitle);
   resultsContainer.appendChild(highScoreSection);
 
   let highScorePlayerPoints = highScoreCalc(correctAnswers, finalTime);

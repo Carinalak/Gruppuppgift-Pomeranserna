@@ -1,11 +1,6 @@
 * {
   font-family: var(--ff-sans-normal);
   font-weight: 300;
-}
-
-// Reset
-
-* {
   margin: 0;
 }
 
@@ -44,4 +39,9 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.input-start {
+  color: white;
+  margin-bottom: 0.5em;
 }

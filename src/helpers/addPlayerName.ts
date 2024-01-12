@@ -2,7 +2,7 @@ import { playerArray } from '../data/variable';
 
 const inPutToStart = document.querySelector('.input-start')!;
 function startQuizMessage() {
-  inPutToStart.innerHTML = `Hej ${playerArray.playerName} !, Klicka på "Starta Quizet" för att börja spela! `;
+  inPutToStart.innerHTML = `Hej ${playerArray.playerName}! Klicka på "Starta Quizet" för att börja spela!`;
 }
 
 export const addPlayerNameEvent = () => {

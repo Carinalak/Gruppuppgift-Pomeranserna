@@ -1,4 +1,4 @@
-import { NUMBER_OF_QUESTIONS_IN_QUIZ, newQuizBox, scoreElement } from '../data/constant';
+import { NUMBER_OF_QUESTIONS_IN_QUIZ, newQuizBox } from '../data/constant';
 import { gameState, questionResults } from '../data/variable';
 import { currentQuestionIndex, displayQuestion } from './displayQuestion';
 import { displayResults } from './displayResult';
@@ -16,16 +16,25 @@ export const checkAnswer = (selectedButtonIndex: number) => {
   gameState.currentQuestionNumber++;
 
   button.classList.add(correct ? 'correct' : 'wrong');
-  questionResults.push({
-    question: question.question,
-    answeredCorrectly: correct,
-  });
 
-  setTimeout(() => {
+  const answerClass = correct ? 'correct' : 'wrong';
+  button.classList.add(answerClass);
+
+  const handleAnimationEnd = () => {
+    button.classList.remove(answerClass);
+    button.removeEventListener('animationend', handleAnimationEnd);
+
     if (gameState.currentQuestionNumber <= NUMBER_OF_QUESTIONS_IN_QUIZ) {
       displayQuestion();
     } else {
       displayResults();
     }
-  }, 1000);
+  };
+
+  button.addEventListener('animationend', handleAnimationEnd);
+
+  questionResults.push({
+    question: question.question,
+    answeredCorrectly: correct,
+  });
 };
