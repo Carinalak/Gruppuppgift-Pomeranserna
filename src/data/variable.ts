@@ -15,3 +15,13 @@ export let playerArray: IPlayer = {
   playerName: '',
   playerScore: 0,
 };
+export interface HighScore {
+  playerName: string;
+  score: number;
+}
+export let highScoreBoard: HighScore[] = [
+  { playerName: 'Jenni är bäst', score: 99999 },
+  { playerName: 'Adam', score: 4500 },
+  { playerName: 'Urban', score: 100 },
+  { playerName: 'Bogan', score: 490 },
+];
