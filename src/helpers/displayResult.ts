@@ -1,8 +1,9 @@
 import { NUMBER_OF_QUESTIONS_IN_QUIZ } from '../data/constant';
-import { questionResults } from '../data/variable';
+import { questionResults, highScoreBoard, playerArray } from '../data/variable';
 import { endMessage } from './endMessage';
 import { restartGame } from './restartGame';
 import { finalTime } from './timeCount';
+import { addScoreToArray, highScoreCalc, highScoreBoardHTML } from './highScore';
 
 export const displayResults = () => {
   const resultsContainer = document.getElementById('resultsContainer') as HTMLDivElement;
@@ -39,6 +40,19 @@ export const displayResults = () => {
   endText.className = 'end-message';
   endText.innerText = endMessage(correctAnswers);
   resultsContainer.appendChild(endText);
+
+  const highScoreSection = document.createElement('div');
+  highScoreSection.id = 'high-Score';
+  highScoreSection.className = 'high-score-container';
+  const highScoreTitle = document.createElement('h3');
+  highScoreTitle.className = 'high-score-title';
+  highScoreTitle.innerText = 'High Score Top 5';
+  highScoreSection.appendChild(highScoreTitle);
+  resultsContainer.appendChild(highScoreSection);
+
+  let highScorePlayerPoints = highScoreCalc(correctAnswers, finalTime);
+  addScoreToArray(playerArray.playerName, highScorePlayerPoints);
+  highScoreBoardHTML(highScoreBoard);
 
   const quizBoxContainer = document.querySelector('.quizbox-container') as HTMLElement;
   quizBoxContainer.classList.add('hidden');
