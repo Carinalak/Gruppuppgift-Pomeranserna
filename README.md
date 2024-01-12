@@ -1,7 +1,7 @@
 # Projektbeskrivning: 📃
 Vi har fått i uppdrag att skapa en quiz, med hjälp av de kunskaper vi har fått hittills i våra kurser på Medieinstitutet - HTML, CSS, SCSS, samt Javascript som vi lär oss just nu. Vår grupp bestämde oss för en Quiz i underhållning. Vi som arbetar med projektet är: Nell Andersson, Carina Lakosil, Yesenia Martinez och Michael Inma. Vi har fyra veckor på oss att slutföra arbetet, dec 2023 - jan 2024. Med den här uppgiften har vi två olika skolämnen vi ska få betyg i: JavaScript grund samt Agilt projektarbete. Därför bifogar vi bilder på vår backlog här, så man ser hur processen har gått till under de fyra veckor vi jobbade på det.
 # Verktyg  	🔧
-JavaScript  
+Vanilla JavaScript  
 TypeScript  
 HTML  
 CSS  
@@ -64,8 +64,8 @@ Klicka i vilka krav ni har gjort:
 - [ ] Flera svarsalternativ ska kunna vara korrekta
 - [ ] Du får olika poäng beroende på hur snabbt du svarar på frågan (ni får komma på själva hur det ska funka, dokumentera i README:n)
 - [ ] Du får minuspoäng om du svarar fel
-- [ ] Du ska kunna välja vem du vill spela som, eller skapa en ny användare (förutsättningen här är att man använder samma webbläsare; använd local storage). Se exempelskiss nedan.
-- [ ] Implementera ett highscore (max 10 platser) med hjälp av local storage
+- [x] Du ska kunna välja vem du vill spela som, eller skapa en ny användare (förutsättningen här är att man använder samma webbläsare; använd local storage). Se exempelskiss nedan.
+- [x] Implementera ett highscore (max 10 platser) med hjälp av local storage
 - [ ] Det ska finnas med en animation för rätt svar, och en animation för fel svar. Det kan t.ex. vara en stjärna som roterar, byter färg, eller en knapp som skakar. Vad ni gör spelar ingen roll, men ni ska implementera det med hjälp av GSAP.
 - Välj ett av nedan:
   - [ ] Man ska kunna välja att spela mellan lätta, medelsvåra och svåra frågor. Planera hur detta påverkar highscoren.
