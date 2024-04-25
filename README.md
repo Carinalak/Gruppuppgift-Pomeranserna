@@ -103,7 +103,6 @@ Klicka i vilka krav ni har gjort:
 ![Lighthouse analys 2](src/assets/images/validering/lighthouse-analys2.png)
 
 
-testar...
 
 
 
